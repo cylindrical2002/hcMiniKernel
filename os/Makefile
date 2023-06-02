@@ -26,7 +26,7 @@ OBJCOPY := rust-objcopy --binary-architecture=riscv64
 DISASM ?= -x
 
 build: env $(KERNEL_BIN)
-	@cp $(KERNEL_ELF) ../../build/riscv64/
+	@cp $(KERNEL_BIN) ../../build/riscv64/hcminikernel/
 
 env:
 	(rustup target list | grep "riscv64gc-unknown-none-elf (installed)") || rustup target add $(TARGET)
