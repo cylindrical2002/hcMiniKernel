@@ -19,3 +19,5 @@ easy-fs-fuse/target/*
 tools/
 pushall.sh
 *.bak
+
+riscv64-runtime/
